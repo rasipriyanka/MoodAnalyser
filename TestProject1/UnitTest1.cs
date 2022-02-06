@@ -11,7 +11,7 @@ namespace TestProject1
         {
             ///Arrange
             string message = "I am in sad mood";
-            string expected = "sad";
+            string expected = "happy";
             MoodAnalyser moodanalyzer = new MoodAnalyser();
             ///Act
             string actual = moodanalyzer.MoodAnalyzer(message);

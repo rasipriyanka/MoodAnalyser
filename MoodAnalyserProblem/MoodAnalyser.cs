@@ -17,7 +17,7 @@ namespace MoodAnalyserProblem
                 }
                 else
                 {
-                    return "sad";
+                    return "happy";
                 }
             }
         }
