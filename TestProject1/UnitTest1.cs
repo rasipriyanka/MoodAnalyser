@@ -7,14 +7,14 @@ namespace TestProject1
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TestMethodMoodAnalyser()
         {
             ///Arrange
-            string message = "Im in happy Mood";
-            string expected = "happy";
-            MoodAnalyser moodAnalyser = new MoodAnalyser();
-
-            string actual = moodAnalyser.DisplayMoodAnalyzer(message);//hear we check the mood of user is happy or sad
+            string message = "I am in sad mood";
+            string expected = "sad";
+            MoodAnalyser moodanalyzer = new MoodAnalyser();
+            ///Act
+            string actual = moodanalyzer.MoodAnalyzer(message);
             ///Assert
             Assert.AreEqual(expected, actual);
         }

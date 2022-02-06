@@ -7,18 +7,20 @@ namespace MoodAnalyserProblem
     public class MoodAnalyser
     {
         public string Message;
-        public string DisplayMoodAnalyzer(string message) //Creating a constructer 
-        {
-            Message = message;
-            if (Message.ToLower().Contains("happy"))
+        //Creating a constructer 
+        public string  MoodAnalyzer(string message) 
             {
-                return "Happy";
-            }
-            else
-            {
-                return "Sad";
+                Message = message;
+                if (Message.ToLower().Contains("happy"))
+                {
+                    return "happy";
+                }
+                else
+                {
+                    return "sad";
+                }
             }
         }
     }
-}
+
 
